@@ -1,0 +1,190 @@
+main {
+    font-family: 'Montserrat Alternates'; 
+}
+#background {
+    background-image: url(../images/new\ jpeg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+button {
+    box-shadow: 3px 3px 3px grey;
+    transition: .2s;
+}
+button:hover {
+    font-size: 22px;
+}
+#local {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    color: white;
+    font-family: 'Montserrat Alternates';
+}
+.pick{
+    font-size: 55px;
+    height: 45px;
+    color: white;
+    font-family: 'Montserrat Alternates';
+    transition: font-size .2s;
+} 
+.pick:hover {
+    color: #D1D1D1;
+    font-size: 65px;
+    opacity: .5;
+}
+.about-us a:hover {
+    color: #D1D1D1;
+    opacity: .5;
+}
+.footerLinks a:hover {
+    color: #D1D1D1;
+    opacity: .5;
+}
+
+
+hr {
+    width: 25%;
+    margin: auto;
+}
+#cocktail-image[src] {
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px black;
+
+}
+#clicks h2 {
+    font-size: 26px;
+}
+footer {
+   background-image: url("../images/istockphoto.jpg");
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+.footerLogo[src] {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5px;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+    margin-top: 40px;
+    box-shadow: 1px 1px 20px 2px white;
+    border-radius: 6px;
+}
+.headerLogo[src] {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+    margin-top: -252px;
+    box-shadow: 1px 1px 20px 2px darkred;
+    border-radius: 6px;
+}
+
+#food-image[src] {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#movie-poster[src] {
+    margin-top: 5px;
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 6px;
+}
+.about-us a:hover {
+    color: #D1D1D1;
+    opacity: .5;
+}
+.footerLinks a:hover {
+    color: #D1D1D1;
+    opacity: .5;
+}
+#past-dates p {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+#view-dates {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+#clear-dates {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+h5 {
+    font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+    #clicks {
+        display: flex;
+        flex-direction: column;
+    }
+    #food-image[src] {
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.star{
+    color: goldenrod;
+    font-size: 1.0rem;
+    padding: 1px; 
+  }
+  .star::before{
+    content: '\2606';   
+    cursor: pointer;
+  }
+  .star.rated::before{
+
+    content: '\2605';  
+  }
+  
+  .stars{
+    counter-reset: rateme 0;   
+    font-size: 1rem;
+    font-weight: 900;
+    display: none;
+  }
+  .star.rated{
+      counter-increment: rateme 1;
+  }
+  .stars::after{
+      content: counter(rateme) '/5';
+  }

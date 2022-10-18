@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wingman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <!-- This is the header section that includes smooth scrolling, clickable links, an appropriate background image and our website's interactive logo.   -->
+  <header id="background">
+    <nav class="p-5">
+      <ul class="flex items-center justify-between">
+        <li>
+          <h1 class=" titletext-lg sm:text-2xl font-bold">Wingman</h1>
+        </li>
+        <span class="flex space-x-4 items-center">
+          <li>
+            <a href="#aboutSection">About US</a>
+          </li>
+          <li>
+            <a href="#past-dates">Past Dates</a>
+          </li>
+        </span>
+      </ul>
+    </nav>
+   
+    <div class="grid text center mt-96 py 28 justify-center h-screen">
+      <a class="pick underline underline-offset-8 decoration-2" href="#movie "> <img class="headerLogo"
+          src="assets\Logo Image\Wingman 3b_edited.jpg">Pick a date</a>
+    </div>
+  </header>
+
+ 
+
+    <!-- This section is where our user will click on the buttons that randomize their date. As well as, view, rate, and clear previous dates.  -->
+    <main>
+    <section class="my-5 ">
+      <div id="clicks" class="flex justify-center justify-around text-center">
+        <div class="flex-col">
+          <h2 class="py-2 underline underline-offset-8" id="movie">Movie<span id="check-one" class="material-symbols-outlined">check_circle</span></h2>
+          <button id="movie-button"class="bg-black text-white p-3 rounded-lg">Click Here</button>
+          <img id="movie-poster">
+          <h2 id="movie-title"></h2>
+        </div>
+        <div class="flex-col">
+          <h2 class="py-2 underline underline-offset-8">Food<span id="check-two" class="material-symbols-outlined">check_circle</span></h2>
+          <button id ="food-button"class="bg-black text-white p-3 rounded-lg">Click Here</button>
+          <img id="food-image" alt="">
+          <h2 id="food-name"></h2>
+        </div>
+        <div class="flex-col">
+          <h2 class="py-2 underline underline-offset-8">Drinks<span id="check-three" class="material-symbols-outlined">check_circle</span></h2>
+          <button id="drinks-button" class="bg-black text-white p-3 rounded-lg">Click Here</button>
+          <img id="cocktail-image" alt=""></img>
+          <h2 id="cocktail-name"></h2>
+          <p id="cocktail-instructions"></p>
+        </div>
+    </section>
+    <section class="past-section flex justify-center">
+      <button id="save-dates" class="bg-black text-white p-3 rounded-lg">Save Date</button>
+      <aside class="stars">
+    <div  data-rating="3">
+    <input onclick="showStars"/>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+    </div>
+  </aside>
+    </section>
+
+    <section id="local" class="past-section flex justify-center">
+      <button id="view-dates" class="bg-black text-white p-3 rounded-lg">View Dates</button>
+      <button id="clear-dates" class="bg-black text-white p-3 rounded-lg">Clear Dates</button>
+    </section>
+    <section class="pastTable flex justify-center my-50">
+      <h2 id="past-dates"></h2>
+    </section>
+
+
+    <!-- This section displays the name and photo of the creators of the website along with their clickable GitHub links that navigate the user into a new tab. -->
+    <div id="aboutSection" class="links-container bg-black text-white m-3 text-center p-10 ">
+      <h1 class="linkT d-flex justify-items-center">About Us</h1>
+      <div class="about-us bg-black text-white m-3 text-center p-5 flex-wrap flex justify-center justify-around">
+        <div class="group">
+          <img class="p-2 rounded-full h-56" src="assets\images\andreweysoldt.jpg" alt="">
+          <h3>Andrew Eysoldt</h3>
+          <a href="https://github.com/Pogga1" target="_blank"
+            class="card-And underline underline-offset-8 decoration-2">Github Link</a>
+        </div>
+        <div class="group">
+          <img class="p-2 rounded-full h-56" src="./assets/images/brandon.jpg" alt="">
+          <h3>Brandon Maggiano</h3>
+          <a href="https://github.com/bmaggiano" target="_blank"
+            class="card-Bran underline underline-offset-8 decoration-2">Github Link</a>
+        </div>
+        <div class="group">
+          <img class="p-2 rounded-full h-56 w-56" src="assets\images\danielvalean.jpg" alt="">
+          <h3>Daniel Valean</h3>
+          <a href="https://github.com/daniel-valean" target="_blank"
+            class="card-Dan underline underline-offset-8 decoration-2">Github Link</a>
+        </div>
+        <div class="group">
+          <img class="p-2 rounded-full h-56 w-56" src="./assets/images/dustin.jpeg" alt="">
+          <h3>Dustin Moore</h3>
+          <a href="https://github.com/Dustinm5Oly" target="_blank"
+            class="card-Dust underline underline-offset-8 decoration-2">Github Link</a>
+        </div>
+        <div class="group">
+          <img class="p-2 rounded-full h-56 w-56" src="./assets/images/miguel.jpg" alt="">
+          <h3>Miguel Gallardo</h3>
+          <a href="https://github.com/magallardo77" target="_blank"
+            class="card-Mig underline underline-offset-8 decoration-2">Github Link</a>
+        </div>
+      </div>
+    </div>
+    <!-- This is the footer section that includes smooth scrolling, clickable links, and our website's logo. -->
+    <footer>
+      <div class="footer-container text-white m-3 text-center p-10">
+        <h2 class="footerTitle font-size:20px; m-3 text-center p-5">Wingman
+          <img class="footerLogo" src="assets\Logo Image\Wingman 3b_edited.jpg">
+        </h2>
+        <section class="footerLinks flex-wrap flex justify-center justify-between">
+          <a class="footerH underline underline-offset-8 decoration-2" href="#">Home</a>
+          <a class="footerPAD underline underline-offset-8 decoration-2" href="#movie-button">Pick A Date</a>
+          <a class="footerPAD underline underline-offset-8 decoration-2" href="#past-dates">View Past Dates</a>
+          <a class="footerAb underline underline-offset-8 decoration-2" href="#aboutSection">About Us</a>
+          <a class="footerAb underline underline-offset-8 decoration-2"
+            href="https://github.com/Dustinm5Oly/WingMan#readme" target="_blank">README</a>
+        </section>
+      </div>
+    </footer>
+
+
+  </main>
+  <script defer src="./assets/js/script.js"></script>
+</body>
+
+</html>
